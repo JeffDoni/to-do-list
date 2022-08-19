@@ -65,7 +65,7 @@ document.addEventListener("click",(e) => {
     const targetEl = e.target;
     const parentEl = targetEl.closest("div");
     let todoTitle;
-    if (parentEl && parentEl.quesySelector("h3")) {
+    if (parentEl && parentEl.querySelector("h3")) {
         todoTitle = parentEl.querySelector("h3").innerText;
     }
     
